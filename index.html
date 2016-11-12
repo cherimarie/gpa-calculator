@@ -8,8 +8,12 @@
 <body>
   <h1>GPA Calculator</h1>
 
+  <p>A 4 point grading scale is very precise, and makes it easy to find the average grade for all your classes, called a Grade Point Average. On this scale, a 4 is equivalent to percentage grade of 90-100%, 3 is equivalent to 80-89%, 2 is equivalent to 70-79%, and 1 is equivalent to 0-69% (not passing).</p>
+
+  <p>Enter each of your classes and the grade (between 1 and 4) that you recieved for it, then click "Calculate" to see your overall GPA.</p>
+
   <h3>Add A Class</h3>
-  <form>
+  <form id="class-form">
     <label for="class-name">Class Name</label>
     <br>
     <input type="text" name="class-name">
@@ -24,12 +28,12 @@
   </form>
 
   <h3>Your Classes</h3>
-  <div id="class-list">
-  </div>
+  <ul id="class-list"></ul>
+  <button id="clear">Clear</button>
 
   <h3>Your GPA</h3>
+  <div id="result"></div>
   <button id="calculate">Calculate</button>
-  <button id="clear">Clear</button>
 
 </body>
 </html>
